@@ -4,7 +4,10 @@ import React from 'react';
 import {
   SparklesIcon,
   VideoCameraIcon,
-  ChatBubbleLeftIcon
+  ChatBubbleLeftIcon,
+  BellIcon,
+  PlusIcon,
+  MegaphoneIcon
 } from '@heroicons/react/24/outline';
 import {
   ChevronDownIcon,
@@ -41,14 +44,15 @@ function Header() {
         <button type="submit" hidden />
       </form>
 
-      <div>
+      <div className="flex">
         <SparklesIcon className="icon" />
         <GlobeAltIcon className="icon" />
         <VideoCameraIcon className="icon" />
         <hr className="h-10 border border-gray-100" />
         <ChatBubbleLeftIcon className="icon" />
-        <GlobeAltIcon className="icon" />
-        <VideoCameraIcon className="icon" />
+        <BellIcon className="icon" />
+        <PlusIcon className="icon" />
+        <MegaphoneIcon className="icon" />
       </div>
     </div>
   )
