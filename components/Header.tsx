@@ -12,6 +12,7 @@ import {
 import {
   ChevronDownIcon,
   HomeIcon,
+  Bars3Icon,
   MagnifyingGlassIcon
 } from '@heroicons/react/16/solid';
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
@@ -44,7 +45,7 @@ function Header() {
         <button type="submit" hidden />
       </form>
 
-      <div className="flex">
+      <div className="items-center space-x-2 text-gray-500 mx-5 hidden lg:inline-flex">
         <SparklesIcon className="icon" />
         <GlobeAltIcon className="icon" />
         <VideoCameraIcon className="icon" />
@@ -53,6 +54,22 @@ function Header() {
         <BellIcon className="icon" />
         <PlusIcon className="icon" />
         <MegaphoneIcon className="icon" />
+      </div>
+      <div className="ml-5 flex items-center lg:hidden">
+        <Bars3Icon className="icon" />
+      </div>
+
+      {/* Sign in / Sign out button */}
+      <div className='hidden lg:flex items-center space-x-2 border border-gray-100 p-2'>
+        <div className='relative h-5 w-5 flex-shrink-0'>
+          <Image
+            objectFit="contain"
+            src="https://links.papareact.com/23l"
+            alt=""
+            layout="fill"
+          />
+        </div>
+        <p className='text-gray-400'>Sign In</p>
       </div>
     </div>
   )
